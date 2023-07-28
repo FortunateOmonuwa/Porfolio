@@ -77,7 +77,9 @@ body.addEventListener('click', (e) => {
 
 PageTransition();
 
-//Class = "name" text animation
+
+
+//Class = "name" text animation.. Home text animation
 // const initialHomeText = document.getElementById('body-text');
 // const homeText = initialHomeText.innerHTML;
 

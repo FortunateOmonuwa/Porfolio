@@ -19,7 +19,7 @@
   --color-grey-6: #12181b;
   --default-font: 1.1rem;
   --border-radius: 14px;
-  --default-transition: all 0.4s ease-in-out;
+  --default-transition: all 0.8s ease-in-out;
   --box-shadow-1: 0 3px 15px rgba(o, o, o, o.3);
 }
 
@@ -196,25 +196,17 @@ section {
   padding-right: 8rem;
 }
 .home-content .right-content .name {
-  font-size: 2.7rem;
+  font-size: 2.4rem;
   overflow: hidden;
   white-space: nowrap;
-  animation: text-entrance 2s steps(20) both;
+  margin-bottom: 2rem;
 }
 .home-content .right-content .name span {
   color: var(--color-secondary);
 }
-@keyframes text-entrance {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-.home-content .right-content .name p {
-  margin: 2rem 0;
-  line-height: 2rem;
+.home-content .right-content p {
+  font-size: 1rem;
+  line-height: 1.9rem;
 }
 
 .about-container {

@@ -88,7 +88,7 @@ section {
 
 .active {
     display: block;
-    animation: sectionsAnimation 0.8s ease-in-out;
+    animation: sectionsAnimation 1s ease-in-out;
 
     @keyframes sectionsAnimation {
         0% {

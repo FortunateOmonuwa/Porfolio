@@ -71,7 +71,15 @@ body.addEventListener('click', (e) => {
   }
 });
 
+  //toggle theme handler
 
+  const themeBtn = document.querySelector('.theme-btn');
+
+  themeBtn.addEventListener('click', ()=>{
+    // let element = document.body;
+
+    body.classList.toggle('light-mode')
+  })
 
 }
 

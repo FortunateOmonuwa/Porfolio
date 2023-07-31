@@ -20,7 +20,21 @@
   --default-font: 1.1rem;
   --border-radius: 14px;
   --default-transition: all 0.8s ease-in-out;
-  --box-shadow-1: 0 3px 15px rgba(o, o, o, o.3);
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.light-mode {
+  --color-primary: #ffffff;
+  --color-secondary: #c0366b;
+  --color-white: #0b0909;
+  --color-black: #000;
+  --color-grey-0:#f8f8f8;
+  --color-grey-1:#6c7983;
+  --color-grey-2:#656c72;
+  --color-grey-3:#6c7983;
+  --color-grey-4:#dfe1e4;
+  --color-grey-5:#f8f8f8;
+  --color-grey-6:#12181b ;
 }
 
 body {
@@ -149,6 +163,30 @@ section {
 }
 .controls .control .i {
   font-size: 1.2rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}
+
+.theme-btn {
+  top: 5%;
+  right: 1.7%;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: var(--color-grey-4);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+.theme-btn:active {
+  transform: translateY(-5px);
+}
+.theme-btn i {
+  font-size: 2rem;
   color: var(--color-grey-2);
   pointer-events: none;
 }
@@ -725,13 +763,13 @@ section {
 }
 @media screen and (min-width: 400px) and (max-width: 900px) {
   .main-btn {
-    width: 40%;
+    width: 50%;
     margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1400px) {
   .main-btn {
-    width: 40%;
+    width: 50%;
     height: 50px;
   }
 }
@@ -740,7 +778,7 @@ section {
 }
 @media screen and (min-width: 200px) and (max-width: 380px) {
   .main-btn .btn-text {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 }
 @media screen and (min-width: 400px) and (max-width: 900px) {

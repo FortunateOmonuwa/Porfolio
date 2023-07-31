@@ -52,6 +52,11 @@ section {
   top: 0;
   padding: 3rem 7rem;
 }
+@media screen and (min-width: 200px) and (max-width: 380px) {
+  section {
+    padding: 3rem 1rem;
+  }
+}
 @media screen and (min-width: 400px) and (max-width: 900px) {
   section {
     padding: 5rem 5rem;
@@ -541,6 +546,158 @@ section {
   }
 }
 
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+@media screen and (min-width: 200px) and (max-width: 360px) {
+  .blogs {
+    display: inline;
+  }
+}
+.blogs .blog {
+  position: relative;
+  background-color: var(--color-grey-5);
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  transition: var(--default-transition);
+}
+.blogs .blog:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: var(--default-transition);
+}
+.blogs .blog:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+  transition: var(--default-transition);
+  box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.8);
+}
+.blogs .blog img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  filter: grayscale(80%);
+  transition: var(--default-transition);
+}
+.blogs .blog .blog-text {
+  margin-top: -7px;
+  padding: 1.1rem;
+  border-top: 8px solid var(--color-secondary);
+}
+.blogs .blog .blog-text h4 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: var(--default-transition);
+}
+.blogs .blog .blog-text h4:hover {
+  color: var(--color-secondary);
+}
+.blogs .blog .blog-text p {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.contact-content-con {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-content-con .left-contact {
+  flex: 2;
+}
+.contact-content-con .left-contact h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contact-content-con .left-contact p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+.contact-content-con .left-contact .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-content-con .left-contact .contact-info .contact-item p {
+  margin: 0.5rem 0 !important;
+  padding: 0 !important;
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon i {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.contact-content-con .contact-icon {
+  display: flex;
+  margin-top: 2rem;
+}
+.contact-content-con .contact-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-grey-5);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+  transition: var(--default-transition);
+}
+.contact-content-con .contact-icon a:hover {
+  background-color: var(--color-secondary);
+}
+.contact-content-con .contact-icon a:hover i {
+  color: var(--color-primary);
+}
+.contact-content-con .contact-icon a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.contact-content-con .right-contact {
+  flex: 3;
+  margin-left: 3rem;
+}
+.contact-content-con .right-contact .input-control {
+  margin: 1.5rem 0;
+}
+.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-grey-5);
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
+}
+.contact-content-con .right-contact .input-control-2 {
+  display: flex;
+}
+.contact-content-con .right-contact .input-control-2 :last-child {
+  margin-left: 1.5rem;
+}
+.contact-content-con .right-contact .submit-btn {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .btn-container {
   display: flex;
   margin-top: 2rem;
@@ -559,19 +716,42 @@ section {
   overflow: hidden;
   width: 40%;
 }
+@media screen and (min-width: 200px) and (max-width: 380px) {
+  .main-btn {
+    width: 50%;
+    height: 40px;
+    margin-bottom: 2rem;
+  }
+}
 @media screen and (min-width: 400px) and (max-width: 900px) {
   .main-btn {
-    width: 60%;
+    width: 40%;
     margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1400px) {
   .main-btn {
-    width: 60%;
+    width: 40%;
+    height: 50px;
   }
 }
 .main-btn .btn-text {
   padding-left: 1rem;
+}
+@media screen and (min-width: 200px) and (max-width: 380px) {
+  .main-btn .btn-text {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 900px) {
+  .main-btn .btn-text {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1400px) {
+  .main-btn .btn-text {
+    font-size: 1rem;
+  }
 }
 .main-btn .btn-icon {
   color: var(--color-white);
@@ -580,7 +760,18 @@ section {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  padding: 1rem;
+  padding: 0.7rem;
+}
+@media screen and (min-width: 400px) and (max-width: 900px) {
+  .main-btn .btn-icon {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1400px) {
+  .main-btn .btn-icon {
+    font-size: 1rem;
+    padding: 1rem;
+  }
 }
 .main-btn::before {
   content: "";
@@ -601,6 +792,7 @@ section {
 
 .title {
   text-align: center;
+  margin-bottom: 3rem;
 }
 .title h3 {
   position: relative;

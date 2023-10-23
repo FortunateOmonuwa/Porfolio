@@ -1,0 +1,198 @@
+@media screen and (max-width: 600px) {
+    header {
+        padding: 0;
+    }
+    header .right-content {
+        padding: 0;
+    }
+
+    .controls {
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        display: flex;
+        gap: 0.3em;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+
+        .control {
+            margin: 1rem, 0.6rem !important;
+        }
+    }
+    .left-content {
+        .image {
+            margin-left: 1.8rem !important;
+        }
+    }
+
+    .right-content {
+        padding: 0;
+        margin: 0;
+
+        .name {
+            font-size: 1.7rem !important;
+        }
+
+        p {
+            font-size: 0.6em !important;
+        }
+    }
+
+    .btn-container {
+        justify-content: center;
+        display: flex;
+    }
+    a {
+        .btn-icon {
+            height: max(41px, 2.3em);
+            width: 40px;
+            padding: 0 !important;
+        }
+    }
+
+    .timeline-icon{
+        i{
+            font-size: 0.8em  !important;
+        }
+    }
+
+    .theme-btn {
+        height: 40px;
+        width: 50px;
+        border-radius: 40px;
+        top: 2%;
+    }
+
+    .sec2 {
+        padding-right: 8px !important;
+        padding-left: 0px !important;
+    }
+
+    .left-about {
+        padding-right: 0rem !important;
+    }
+    .about-container {
+        h4 {
+            font-size: 1.4em !important;
+        }
+        p {
+            padding: 0 !important;
+            font-size: 0.7em;
+        }
+    }
+    .right-about {
+        grid-gap: 0.3em !important;
+    }
+    .left-about {
+        padding-inline-start: 12px !important;
+    }
+
+    .progress-bars {
+        padding-inline-start: 8px !important;
+    }
+    .title {
+        h3 {
+            font-size: 2.2rem;
+            .bg-text {
+                font-size: 3rem !important;
+            }
+        }
+    }
+    .timeline-item {
+        padding-left: 1.5em !important;
+        h5 {
+            font-size: 1.05em !important;
+        }
+    }
+
+    .timeline-icon {
+        left: -15px !important;
+        width: 28px !important;
+        height: 28px !important;
+    }
+
+    .job-description {
+    }
+
+    .sec3 {
+        padding-right: 8px !important;
+
+        .portfolios {
+            grid-template-columns: repeat(1, 1fr);
+            padding-bottom: 2em;
+        }
+    }
+
+    .blogs-content {
+        padding-bottom: 2em;
+    }
+
+    .sec5 {
+        //padding: 0px !important;
+        .contact-content-con {
+            display: grid;
+            padding-top: 0 !important;
+
+            .right-contact {
+                margin-left: 0em !important;
+                //padding-inline-start: 15px !important;
+            }
+        }
+
+        .input-control textarea {
+            width: 100% !important;
+        }
+    }
+    input {
+        width: 100% !important;
+
+        &::placeholder{
+            font-size: 0.8em !important;
+        }
+    }
+    .input-control-2 :last-child {
+        margin-left: 0.5rem !important;
+    }
+
+    .input-control-2 {
+        width: 100% !important;
+        
+    }
+
+    .contact-info {
+        .contact-item {
+            justify-content: left !important;
+            gap: 0.1em !important;
+            
+
+            p {
+                font-size: 0.9em;
+            }
+        }
+        .icon {
+            display: flex !important;
+            gap: 0.2em !important;
+            font-size: 0.9em !important;
+            i{
+                font-size: 0.9em !important;
+            }
+        }
+    }
+
+    .submit-btn{
+        justify-content: flex-end !important;
+        margin-block-start: -15px !important;
+        margin-block-end: 1em;
+    }
+
+    .contact-icon{
+        justify-content: center !important;
+    }
+
+    .blog{
+        margin-bottom: 1em !important;
+    }
+}

@@ -28,13 +28,13 @@
   --color-secondary: #c0366b;
   --color-white: #0b0909;
   --color-black: #000;
-  --color-grey-0:#f8f8f8;
-  --color-grey-1:#6c7983;
-  --color-grey-2:#656c72;
-  --color-grey-3:#6c7983;
-  --color-grey-4:#dfe1e4;
-  --color-grey-5:#f8f8f8;
-  --color-grey-6:#12181b ;
+  --color-grey-0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #656c72;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #dfe1e4;
+  --color-grey-5: #f8f8f8;
+  --color-grey-6: #12181b;
 }
 
 body {
@@ -654,6 +654,7 @@ section {
   margin-top: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
+  color: var(--color-secondary);
 }
 .contact-content-con .left-contact p {
   margin: 1rem 0;
@@ -671,6 +672,7 @@ section {
 .contact-content-con .left-contact .contact-info .contact-item .icon {
   display: grid;
   grid-template-columns: 40px 1fr;
+  color: var(--color-secondary);
 }
 .contact-content-con .left-contact .contact-info .contact-item .icon i {
   display: flex;
@@ -712,7 +714,8 @@ section {
 .contact-content-con .right-contact .input-control {
   margin: 1.5rem 0;
 }
-.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+.contact-content-con .right-contact .input-control input,
+.contact-content-con .right-contact .input-control textarea {
   border-radius: 30px;
   font-weight: inherit;
   font-size: inherit;
@@ -870,4 +873,160 @@ section {
   background-color: var(--color-grey-5);
   transform: translateX(-50%);
   position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+  header .right-content {
+    padding: 0;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    gap: 0.3em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 1rem, 0.6rem !important;
+  }
+  .left-content .image {
+    margin-left: 1.8rem !important;
+  }
+  .right-content {
+    padding: 0;
+    margin: 0;
+  }
+  .right-content .name {
+    font-size: 1.7rem !important;
+  }
+  .right-content p {
+    font-size: 0.6em !important;
+  }
+  .btn-container {
+    justify-content: center;
+    display: flex;
+  }
+  a .btn-icon {
+    height: max(41px, 2.3em);
+    width: 40px;
+    padding: 0 !important;
+  }
+  .timeline-icon i {
+    font-size: 0.8em !important;
+  }
+  .theme-btn {
+    height: 40px;
+    width: 50px;
+    border-radius: 40px;
+    top: 2%;
+  }
+  .sec2 {
+    padding-right: 8px !important;
+    padding-left: 0px !important;
+  }
+  .left-about {
+    padding-right: 0rem !important;
+  }
+  .about-container h4 {
+    font-size: 1.4em !important;
+  }
+  .about-container p {
+    padding: 0 !important;
+    font-size: 0.7em;
+  }
+  .right-about {
+    grid-gap: 0.3em !important;
+  }
+  .left-about {
+    padding-inline-start: 12px !important;
+  }
+  .progress-bars {
+    padding-inline-start: 8px !important;
+  }
+  .title h3 {
+    font-size: 2.2rem;
+  }
+  .title h3 .bg-text {
+    font-size: 3rem !important;
+  }
+  .timeline-item {
+    padding-left: 1.5em !important;
+  }
+  .timeline-item h5 {
+    font-size: 1.05em !important;
+  }
+  .timeline-icon {
+    left: -15px !important;
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .sec3 {
+    padding-right: 8px !important;
+  }
+  .sec3 .portfolios {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 2em;
+  }
+  .blogs-content {
+    padding-bottom: 2em;
+  }
+  .sec5 .contact-content-con {
+    display: grid;
+    padding-top: 0 !important;
+  }
+  .sec5 .contact-content-con .right-contact {
+    margin-left: 0em !important;
+  }
+  .sec5 .input-control textarea {
+    width: 100% !important;
+  }
+  input {
+    width: 100% !important;
+  }
+  input::-moz-placeholder {
+    font-size: 0.8em !important;
+  }
+  input::placeholder {
+    font-size: 0.8em !important;
+  }
+  .input-control-2 :last-child {
+    margin-left: 0.5rem !important;
+  }
+  .input-control-2 {
+    width: 100% !important;
+  }
+  .contact-info .contact-item {
+    justify-content: left !important;
+    gap: 0.1em !important;
+  }
+  .contact-info .contact-item p {
+    font-size: 0.9em;
+  }
+  .contact-info .icon {
+    display: flex !important;
+    gap: 0.2em !important;
+    font-size: 0.9em !important;
+  }
+  .contact-info .icon i {
+    font-size: 0.9em !important;
+  }
+  .submit-btn {
+    justify-content: flex-end !important;
+    margin-block-start: -15px !important;
+    margin-block-end: 1em;
+  }
+  .contact-icon {
+    justify-content: center !important;
+  }
+  .blog {
+    margin-bottom: 1em !important;
+  }
 }/*# sourceMappingURL=styles.css.map */

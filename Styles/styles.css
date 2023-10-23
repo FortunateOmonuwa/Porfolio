@@ -911,7 +911,7 @@ section {
     font-size: 0.6em !important;
   }
   .btn-container {
-    justify-content: center;
+    justify-content: left;
     display: flex;
   }
   a .btn-icon {
